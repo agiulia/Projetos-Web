@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(to right, #1d99ff, #2389ff);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+.claquete {
+    font-size: 2.5rem;
+    grid-column: span 2;
+    margin-left: 20px;
+}
+
+.titulo {
+    font-size: 2rem;
+    grid-column: span 8;
+    text-align: center;
+}
+
+.nav {
+    grid-column: span 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-image: url("images/cinema.png");
+    background-size: 400px;
+    background-repeat: repeat;
+}
+
+.card {
+    box-sizing: content-box;
+    grid-column: span 4;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagem {
+    width: 80%;
+    height: auto;
+}
+
+.footer {
+    display: grid;
+    grid-column: span 12;
+    background-color: rgb(244, 255, 95);
+    text-align: center;
+    justify-content: bottom;
+}
