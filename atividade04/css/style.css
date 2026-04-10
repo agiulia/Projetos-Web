@@ -1,14 +1,19 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Verdana, sans-serif;
+  background-image: url('../images/cinema.png');
+  background-size: 250px;
+  background-repeat: repeat;
 }
 
 .header {
-    background-image: linear-gradient(to right, #1d99ff, #2389ff);
+    background-image: linear-gradient(to right, #127efa, #1d99ff);
     color: white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .claquete {
@@ -32,29 +37,48 @@ body {
 .main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image: url("images/cinema.png");
-    background-size: 400px;
-    background-repeat: repeat;
 }
 
 .card {
-    box-sizing: content-box;
+    display: grid;
     grid-column: span 4;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.imagem {
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    place-self: center center;
+    margin: 10px;
+    transition: transform 0.5s ease;
+}
+
+.text{
+    display: grid;
+    grid-column: span 8;
     background-color: white;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.imagem {
-    width: 80%;
-    height: auto;
+    padding: 10px;
 }
 
 .footer {
     display: grid;
     grid-column: span 12;
-    background-color: rgb(244, 255, 95);
+    background-color: rgb(244, 207, 45);
     text-align: center;
     justify-content: bottom;
+    border-radius: 10px;
+    margin: 10px;
 }
+
+.card:hover {
+    transform: translate(30px, -20px);
+  }
