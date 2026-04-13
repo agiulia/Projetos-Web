@@ -61,6 +61,7 @@ body {
 
 .text{
     display: grid;
+    align-items: start;
     grid-column: span 8;
     background-color: white;
     margin: 10px;
