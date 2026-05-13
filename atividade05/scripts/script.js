@@ -3,9 +3,14 @@ function criar_tarefa() {
     let prioridade = document.getElementById("prioridade").value;
     let cor;
 
-    /* Definir a cor conforme a prioridade
+    let tarefa = document.createElement("p");
+    tarefa.innerText = "Nome da Tarefa: " + nome;
+
+    let card = document.createElement("div");
+    card.appendChild(tarefa);
+
     if (prioridade === "alta") {
-        cor = "red";
+        card.classList.add("danger");
     }
 
     else if (prioridade === "media") {
@@ -15,13 +20,6 @@ function criar_tarefa() {
     else {
         cor = "green";
     }
-    */
-
-    let tarefa = document.createElement("p");
-    tarefa.innerText = "Nome da Tarefa: " + nome;
-
-    let card = document.createElement("div");
-    card.appendChild(tarefa);
 
     document.body.appendChild(card);
 }
