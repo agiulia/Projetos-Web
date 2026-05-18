@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.border {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    border-width: 10px;
+    border-radius: 5px;
+}

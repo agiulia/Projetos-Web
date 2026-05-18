@@ -1,7 +1,7 @@
 function criar_tarefa() {
     let nome = document.getElementById("nome").value;
     let prioridade = document.getElementById("prioridade").value;
-    let cor;
+    let container = document.getElementById("tc");
 
     let tarefa = document.createElement("p");
     tarefa.innerText = "Nome da Tarefa: " + nome;
@@ -9,17 +9,19 @@ function criar_tarefa() {
     let card = document.createElement("div");
     card.appendChild(tarefa);
 
-    if (prioridade === "alta") {
-        card.classList.add("danger");
+    card.classList.add("border");
+
+    if (prioridade === "Alta") {
+        card.classList.add("border-danger");
     }
 
-    else if (prioridade === "media") {
-        cor = "yellow";
+    else if (prioridade === "Média") {
+        card.classList.add("border-warning");
     }
 
     else {
-        cor = "green";
+        card.classList.add("border-success");
     }
 
-    document.body.appendChild(card);
+    container.appendChild(card);
 }
